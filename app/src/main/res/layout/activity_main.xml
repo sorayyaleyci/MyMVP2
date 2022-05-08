@@ -79,13 +79,12 @@
         app:layout_constraintVertical_bias="0.79" />
 
     <!-- Progress Bar to be displayed before displaying next string -->
-    <ProgressBar
+    <ImageView
         android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyleLarge"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:src="@drawable/dice"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:visibility="gone"
-        android:progressDrawable="@drawable/dice"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -20,7 +21,7 @@ public class MainActivity extends AppCompatActivity implements Contract.View {
     private Button button;
 
     // creating object of ProgressBar class
-    private ProgressBar progressBar;
+    private ImageView progressBar;
 
     // creating object of Presenter interface in Contract
     Contract.Presenter presenter;
@@ -67,6 +68,7 @@ public class MainActivity extends AppCompatActivity implements Contract.View {
     // method to display the Course Detail TextView
     public void showProgress() {
         progressBar.setVisibility(View.VISIBLE);
+        progressBar.animate().rotation(360);
         textView.setVisibility(View.INVISIBLE);
     }
 
@@ -75,6 +77,8 @@ public class MainActivity extends AppCompatActivity implements Contract.View {
     public void hideProgress() {
         progressBar.setVisibility(GONE);
         textView.setVisibility(View.VISIBLE);
+        progressBar.animate().rotation(0);
+
     }
 
     @Override
