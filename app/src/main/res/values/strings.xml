@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My MVP</string>
+    <string name="buttonText">Roll the Dice</string>
+    <string name="heading">MVP Architecture Pattern</string>
+    <string name="subHeading">How lucky are you?</string>
+    <string name="description">--------</string>
+
+
+</resources>
